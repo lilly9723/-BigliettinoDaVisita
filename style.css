@@ -10,7 +10,7 @@ body {
 .logo-container {
     position: relative;
     text-align: center;
-    margin-top: 40px; /* Spazio tra il logo e la parte superiore della pagina */
+    margin-top: 20px; /* Spazio tra il logo e la parte superiore della pagina */
 }
 
 .logo-container .logo-wrapper {
@@ -39,14 +39,14 @@ body {
 .top-box {
     background-color: #c30c26;
     color: #fff;
-    padding: 50px 40px; /* Aumenta il padding per dare più spazio interno */
+    padding: 50px 20px; /* Aumenta il padding per dare più spazio interno */
     text-align: center;
-    width: 50%;
-    margin: 0 auto;
+    width: 80%; /* Dimensione percentuale per il riquadro */
+    max-width: 600px; /* Limite massimo per schermi grandi */
+    margin: 20px auto; /* Margine centrato */
     border-radius: 25px; /* Arrotonda di più gli angoli */
     position: relative;
     z-index: 1;
-    margin-top: 40px; /* Spazio extra tra il logo e il riquadro */
 }
 
 .top-box h1 {
@@ -79,7 +79,7 @@ body {
 
 /* Sezione dettagli in basso, con icone accanto al testo */
 .details {
-    max-width: 700px;
+    max-width: 600px; /* Stessa larghezza della top-box */
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -109,7 +109,7 @@ body {
     text-decoration: underline;
 }
 
-.add-to-contact {        /* Pulsante "Aggiungi a Rubrica" */
+.add-to-contact { /* Pulsante "Aggiungi a Rubrica" */
     text-align: center; /* Centra il pulsante */
     margin: 30px 0; /* Spazio attorno al pulsante */
 }
@@ -126,14 +126,14 @@ body {
 }
 
 .btn-add-contact:hover {
-    background-color: #c30c26; /* Colore più chiaro al passaggio del mouse */
+    background-color: #a80a1f; /* Colore più chiaro al passaggio del mouse */
 }
 
 /* Media query per schermi piccoli come smartphone */
 @media screen and (max-width: 600px) {
     .top-box {
         padding: 15px;
-        width: 90%;
+        width: 90%; /* Adattamento per schermi piccoli */
         border-radius: 20px; /* Arrotondamento proporzionale su mobile */
     }
 
@@ -163,16 +163,5 @@ body {
     .details p {
         font-size: 18px;
         margin: 10px 0;
-    }
-
-    .logo-container .logo-wrapper {
-        width: 100px;
-        height: 100px;
-        margin-bottom: -50px;
-    }
-
-    .logo {
-        width: 70px;
-        height: 70px;
     }
 }
