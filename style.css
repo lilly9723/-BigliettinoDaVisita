@@ -1,4 +1,4 @@
-/* Corpo della pagina */
+* Corpo della pagina */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -21,7 +21,7 @@ body {
     display: inline-block;
     position: relative;
     z-index: 2;
-    margin-bottom: -60px; /* Fa sì che il cerchio sporga sul riquadro colorato */
+    margin-bottom: -40px; /* Ridotto per non coprire l'h1 */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Aggiunge ombra per un effetto tridimensionale */
 }
 
@@ -47,6 +47,7 @@ body {
     border-radius: 25px; /* Arrotonda di più gli angoli */
     position: relative;
     z-index: 1;
+    margin-top: 60px; /* Maggiore spazio tra il logo e il titolo */
 }
 
 .top-box h1 {
@@ -135,6 +136,7 @@ body {
         padding: 15px;
         width: 90%; /* Adattamento per schermi piccoli */
         border-radius: 20px; /* Arrotondamento proporzionale su mobile */
+        margin-top: 70px; /* Maggiore spazio tra il logo e il titolo su mobile */
     }
 
     .top-box h1 {
@@ -163,5 +165,9 @@ body {
     .details p {
         font-size: 18px;
         margin: 10px 0;
+    }
+
+    .logo-container .logo-wrapper {
+        margin-bottom: -30px; /* Ridotto per non coprire l'h1 su mobile */
     }
 }
